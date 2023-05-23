@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Example for loop</h1>
+<h1  th:text="${name}"></h1>
+<ul>
+<li th:each="n,status:${name}">
+<span th:text="${status.index}+'  '+${n}"></span>
+
+
+</li>
+
+</ul>
+</body>
+</html>
